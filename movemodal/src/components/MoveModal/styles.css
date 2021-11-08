@@ -1,0 +1,74 @@
+.mainGrid{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+  
+  .column{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  
+  .card{
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    cursor: all-scroll;
+    /* transform: translate(550px, 0px) !important;  */
+  }
+
+  .card.fade-in-modal {
+    animation: fadeIn 0.7s;
+    -webkit-animation: fadeIn 0.7s;
+    -moz-animation: fadeIn 0.7s;
+    -o-animation: fadeIn 0.7s;
+    -ms-animation: fadeIn 0.7s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+ 
+  /*Btn close*/
+  .heading{ 
+    display: flex;
+    flex-direction:row;
+    align-items: center; 
+    justify-content: space-between;
+    background: #d1d6db;
+    border-radius: 3px;
+    margin: 0.2em;
+  }
+  
+  .heading h3{
+    font-size: 14px !important;
+    margin-left: 10px;
+  }
+  
+  .heading button{
+    color: #000;
+    height: 34px;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .heading button:hover{
+    opacity: 1;
+  }
+  
+ 
